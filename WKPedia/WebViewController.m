@@ -89,7 +89,7 @@ static void* WebViewControllerObservationContext = &WebViewControllerObservation
     [self.webView addObserver:self forKeyPath:@"loading" options:(NSKeyValueObservingOptions)0 context:WebViewControllerObservationContext];
     [self.webView addObserver:self forKeyPath:@"title" options:(NSKeyValueObservingOptions)0 context:WebViewControllerObservationContext];
     
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"https://en.wikipedia.org/wiki/San_Francisco"]];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://en.wikipedia.org/w/index.php?title=San_Francisco&mobileaction=toggle_view_desktop"]];
     [self.webView loadRequest:request];
 }
 
